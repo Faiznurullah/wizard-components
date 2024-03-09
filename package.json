@@ -1,0 +1,16 @@
+{
+  "name": "wizard-component",
+  "version": "1.0.0",
+  "description": "simple css components",
+  "main": "wizard.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "css",
+    "components",
+    "web"
+  ],
+  "author": "Faiz Nurullah",
+  "license": "MIT"
+}
