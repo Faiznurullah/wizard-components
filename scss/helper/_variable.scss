@@ -1,0 +1,71 @@
+
+
+// variabel colors
+
+$blue: #0f68ec !default;
+$green: #48c248 !default;
+$indigo:  #6212e4 !default;
+$orange:  #fa770c !default;
+$red: #dd2c3e !default;
+$white:    #fff !default;
+$yellow: #f5e642 !default;
+
+$colors: (
+"blue":       $blue,
+"green":      $green, 
+"indigo":     $indigo,
+"orange":     $orange, 
+"red":        $red, 
+"yellow":     $yellow, 
+"white":      $white
+) !default;
+
+// end of variabel colors
+
+
+// Alert Colors 
+
+$alert-colors: (
+"blue": (
+"background-color": #EFF,
+"border": 1px solid #DEE,
+"color": #9AA
+),
+"grey":      (
+"background-color": #EEE,
+"border": 1px solid #DDD,
+"color": #999,
+),
+"green":     (
+"background-color": #EFE,
+"border": 1px solid #DED,
+"color": #9A9,
+), 
+"red":       (
+"background-color": #FEE,
+"border": 1px solid #EDD,
+"color": #A66,
+), 
+"yellow":    (
+"background-color": #FDF7DF,
+"border": 1px solid #FEEC6F,
+"color": #C9971C,
+)
+) !default;
+
+// end Alert Colors
+
+
+// Size of Container 
+
+$max-size-grid: (
+"s": 540px,
+"m": 720px,
+"l": 960px,
+"xl": 1024px,
+"xxl": 1280px
+)!default;
+
+// End of Size Container
+
+
