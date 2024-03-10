@@ -7,21 +7,17 @@
 .alert-blue {
   background-color: #EFF;
   color: #9AA;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  margin: 5px;
-  font-size: 12px;
+  border: 1px solid #DEE;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+  text-align: start;
+  font-size: 18px;
   font-family: "Manrope";
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.alert-blue:hover {
-  background-color: #bbffff;
-}
-.alert-blue:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem 1px solid #DEE;
 }
 .alert-blue.auto {
   width: auto;
@@ -29,21 +25,17 @@
 .alert-grey {
   background-color: #EEE;
   color: #999;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  margin: 5px;
-  font-size: 12px;
+  border: 1px solid #DDD;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+  text-align: start;
+  font-size: 18px;
   font-family: "Manrope";
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.alert-grey:hover {
-  background-color: #d5d5d5;
-}
-.alert-grey:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem 1px solid #DDD;
 }
 .alert-grey.auto {
   width: auto;
@@ -51,21 +43,17 @@
 .alert-green {
   background-color: #EFE;
   color: #9A9;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  margin: 5px;
-  font-size: 12px;
+  border: 1px solid #DED;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+  text-align: start;
+  font-size: 18px;
   font-family: "Manrope";
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.alert-green:hover {
-  background-color: #bbffbb;
-}
-.alert-green:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem 1px solid #DED;
 }
 .alert-green.auto {
   width: auto;
@@ -73,21 +61,17 @@
 .alert-red {
   background-color: #FEE;
   color: #A66;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  margin: 5px;
-  font-size: 12px;
+  border: 1px solid #EDD;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+  text-align: start;
+  font-size: 18px;
   font-family: "Manrope";
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.alert-red:hover {
-  background-color: #ffbbbb;
-}
-.alert-red:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem 1px solid #EDD;
 }
 .alert-red.auto {
   width: auto;
@@ -95,21 +79,17 @@
 .alert-yellow {
   background-color: #FDF7DF;
   color: #C9971C;
-  border: none;
-  border-radius: 3px;
-  padding: 8px 16px;
-  margin: 5px;
-  font-size: 12px;
+  border: 1px solid #FEEC6F;
+  position: relative;
+  width: 450px;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6;
+  text-align: start;
+  font-size: 18px;
   font-family: "Manrope";
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.alert-yellow:hover {
-  background-color: #faebaf;
-}
-.alert-yellow:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem 1px solid #FEEC6F;
 }
 .alert-yellow.auto {
   width: auto;

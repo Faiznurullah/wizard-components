@@ -1,4 +1,4 @@
-@mixin alert-style($bg-color, $text-color, $border-color){
+@mixin alert-styles($bg-color, $text-color, $border-color){
     background-color: $bg-color;
     color: $text-color;
     border: $border-color;
