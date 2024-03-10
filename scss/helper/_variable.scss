@@ -3,11 +3,13 @@
 // variabel colors
 
 $blue: #0f68ec !default;
+$dark: #151618 !default;
 $green: #48c248 !default;
 $indigo:  #6212e4 !default;
 $orange:  #fa770c !default;
 $red: #dd2c3e !default;
 $white:    #fff !default;
+$grey:    #e9e6e6 !default;
 $yellow: #f5e642 !default;
 
 $colors: (
@@ -54,6 +56,44 @@ $alert-colors: (
 ) !default;
 
 // end Alert Colors
+
+// Button Colors
+
+$button-colors: (
+"blue" : (
+    "background-color": $blue,
+    "color": $white,
+    "outline-color": #007bff40,
+),
+"dark" : (
+    "background-color": $dark,
+    "color": $white,
+    "outline-color": #3c3d3d40,
+),
+"green" : (
+    "background-color": $green,
+    "color": $white,
+    "outline-color": #00ff7340,
+),
+"grey" : (
+    "background-color": $grey,
+    "color": $white,
+    "outline-color": #f0f7f340,
+),
+"red" : (
+    "background-color": $red,
+    "color": $white,
+    "outline-color": #e2303040,
+),
+"yellow" : (
+    "background-color": $yellow,
+    "color": $white,
+    "outline-color": #d6e23040,
+)
+) !default;
+
+
+// End Button Colors
 
 
 // Size of Container 

@@ -1,0 +1,7 @@
+.button { 
+    @each $key, $value in $button-colors { 
+        &-#{$key} {
+            @include button-styles(map-get($value, "background-color"), map-get($value, "color"), map-get($value, "outline-color"))
+          }  
+    } 
+  }
