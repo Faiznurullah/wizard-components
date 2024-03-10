@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../../font/manrope/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+.alert {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 25px;
+  margin: 12px;
+  border-radius: 6px;
+  line-height: 1.6px;
+  justify-content: space-around;
+  text-align: start;
+  font-size: 18px;
+  font-family: "Manrope";
+}
+.alert-blue {
+  background-color: #EFF;
+  border: 1px solid #DEE;
+  color: #9AA;
+}
+.alert-grey {
+  background-color: #EEE;
+  border: 1px solid #DDD;
+  color: #999;
+}
+.alert-green {
+  background-color: #EFE;
+  border: 1px solid #DED;
+  color: #9A9;
+}
+.alert-red {
+  background-color: #FEE;
+  border: 1px solid #EDD;
+  color: #A66;
+}
+.alert-yellow {
+  background-color: #FDF7DF;
+  border: 1px solid #FEEC6F;
+  color: #C9971C;
+}/*# sourceMappingURL=wizard.css.map */
