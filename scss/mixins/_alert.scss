@@ -1,0 +1,15 @@
+@mixin alert-style($bg-color, $text-color, $border-color){
+    background-color: $bg-color;
+    color: $text-color;
+    border: $border-color;
+    position: relative;
+    width: 450px;
+    height: auto;
+    padding: 25px;
+    margin: 12px;
+    border-radius: 6px;
+    line-height: 1.6;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Manrope';
+}
