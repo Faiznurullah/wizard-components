@@ -6026,4 +6026,27 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f5e642;
   color: #fff;
   font-family: "Manrope";
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
 }/*# sourceMappingURL=wizard.css.map */
