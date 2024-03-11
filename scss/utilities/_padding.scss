@@ -1,0 +1,18 @@
+.p-#{$value}{
+    padding: $value !important;
+}
+
+.pl-#{$value}{
+    padding-left: $value !important;
+}
+.pt-#{$value}{
+    padding-top: $value !important;
+}
+
+.pr-#{$value}{
+    padding-right: $value !important;
+}
+
+.pb-#{$value}{
+    padding-bottom: $value !important;
+}

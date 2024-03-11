@@ -1,0 +1,18 @@
+.m-#{$value}{
+    margin: $value !important;
+}
+
+.ml-#{$value}{
+    margin-left: $value !important;
+}
+.mt-#{$value}{
+    margin-top: $value !important;
+}
+
+.mr-#{$value}{
+    margin-right: $value !important;
+}
+
+.mb-#{$value}{
+    margin-bottom: $value !important;
+}
