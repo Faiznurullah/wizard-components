@@ -2,15 +2,15 @@
 
 // variabel colors
 
-$blue: #0f68ec !default;
-$dark: #151618 !default;
+$blue:  #0f68ec !default;
+$dark:  #151618 !default;
 $green: #48c248 !default;
-$indigo:  #6212e4 !default;
-$orange:  #fa770c !default;
-$red: #dd2c3e !default;
-$white:    #fff !default;
-$grey:    #e9e6e6 !default;
-$yellow: #f5e642 !default;
+$indigo:#6212e4 !default;
+$orange:#fa770c !default;
+$red:   #dd2c3e !default;
+$white: #fff !default;
+$grey:  #e9e6e6 !default;
+$yellow:#f5e642 !default;
 
 $colors: (
 "blue":       $blue,
@@ -96,7 +96,7 @@ $badge-button-colors: (
 
 
 
-// Size of Container 
+// Container size
 
 $max-size-grid: (
 "s": 540px,
@@ -109,3 +109,20 @@ $max-size-grid: (
 // End of Size Container
 
 
+// Text Variabel
+
+$lead-font-size: 1.25rem;
+$lead-font-weight: 300;
+$lead-line-height: 1.6;
+$paragraph-font-size: 1rem;
+$paragraph-line-height: 1.6;
+$paragraph-margin-bottom: 1.25rem;
+
+$text-align: (
+    "left" : left,
+    "right" : right,
+    "center" : center,
+    "justify" : justify
+);
+
+// End of Text Variabel

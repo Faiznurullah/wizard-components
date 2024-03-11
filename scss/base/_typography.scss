@@ -4,3 +4,37 @@
     font-weight: 300;  
     font-style: normal;  
 }
+
+.lead {
+    font-size: $lead-font-size;
+    font-weight: $lead-font-weight;
+    line-height: $lead-line-height;
+  }
+
+
+.paragraph {
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    margin-bottom: $paragraph-margin-bottom;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem; 
+}
+
+@each $key, $value in $text-align{
+    .text-#{$key} {
+        text-align: $value;
+    }
+}
+
+@each $key, $value in $colors{
+    .text-#{$key} {
+        color: $value;
+    }
+}
+
+
