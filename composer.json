@@ -1,0 +1,12 @@
+{
+    "name": "wizard/components",
+    "description": "a simple CSS Framework for easy website development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Faiz Nurullah"
+        }
+    ],
+    "require": {}
+}
