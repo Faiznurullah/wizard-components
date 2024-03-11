@@ -4,7 +4,9 @@
   "description": "simple css components",
   "main": "wizard.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start" : "sass --watch scss/wizard.scss:css/wizard.css",
+    "build": "sass scss/wizard.scss css/wizard.css --style compressed"
   },
   "keywords": [
     "css",

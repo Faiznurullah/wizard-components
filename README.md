@@ -5,7 +5,7 @@
 <h4 align="center">Wizard Components</h4>
 <p align="center">A Simple CSS Framework for Easy Website Development</p>
 
-## Wizard 1
+## About Wizard
 
 Wizard components is a simple Cascading Style Sheets (CSS) framework that provides a wide range of components to facilitate website development needs. Currently, it is at version 1 and still in ongoing development.
 
