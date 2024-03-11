@@ -75,6 +75,30 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-between {
+  align-items: space-between;
+}
+
+.align-items-around {
+  align-items: space-around;
+}
+
+.align-items-evenly {
+  align-items: space-evenly;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;

@@ -1,0 +1,5 @@
+@each $key, $value in $positions {
+    .align-items-#{$key} { 
+     align-items: $value;
+    }
+} 

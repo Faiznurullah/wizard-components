@@ -1,4 +1,4 @@
-@each $key, $value in $flex {
+@each $key, $value in $positions {
     .justify-content-#{$key} { 
      display: flex;
      justify-content: $value;
