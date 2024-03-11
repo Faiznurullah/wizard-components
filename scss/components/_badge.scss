@@ -1,0 +1,9 @@
+.badge{
+
+    @each $key, $value in $badge-button-colors {
+        &-#{$key} {
+            @include badge-styles(map-get($value, "background-color"), map-get($value, "color"));
+        }
+    }
+
+}

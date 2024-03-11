@@ -1,0 +1,15 @@
+@mixin badge-styles($bg-color, $text-color) {
+    display: inline-block;
+    padding: 5px;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: "Manrope";
+  }
+  

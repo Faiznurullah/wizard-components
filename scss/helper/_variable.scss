@@ -57,9 +57,9 @@ $alert-colors: (
 
 // end Alert Colors
 
-// Button Colors
+// Badge and Button Colors
 
-$button-colors: (
+$badge-button-colors: (
 "blue" : (
     "background-color": $blue,
     "color": $white,
@@ -90,10 +90,10 @@ $button-colors: (
     "color": $white,
     "outline-color": #d6e23040,
 )
-) !default;
+) !default; 
 
+// End Badge and Button Colors
 
-// End Button Colors
 
 
 // Size of Container 

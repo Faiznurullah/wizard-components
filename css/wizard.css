@@ -208,4 +208,89 @@
 .button-yellow:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(214, 226, 48, 0.2509803922);
+}
+
+.badge-blue {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #0f68ec;
+  color: #fff;
+  font-family: "Manrope";
+}
+.badge-dark {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #151618;
+  color: #fff;
+  font-family: "Manrope";
+}
+.badge-green {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #48c248;
+  color: #fff;
+  font-family: "Manrope";
+}
+.badge-grey {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #e9e6e6;
+  color: #fff;
+  font-family: "Manrope";
+}
+.badge-red {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #dd2c3e;
+  color: #fff;
+  font-family: "Manrope";
+}
+.badge-yellow {
+  display: inline-block;
+  padding: 5px;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #f5e642;
+  color: #fff;
+  font-family: "Manrope";
 }/*# sourceMappingURL=wizard.css.map */
