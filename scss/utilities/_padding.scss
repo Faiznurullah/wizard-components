@@ -1,18 +1,26 @@
 .p-#{$value}{
-    padding: $value !important;
+    padding: #{$value}rem;
+}
+
+.px-#{$value}{
+    padding: 0 #{$value}rem;
+}
+
+.py-#{$value}{
+    padding: #{$value}rem 0;
 }
 
 .pl-#{$value}{
-    padding-left: $value !important;
+    padding-left: #{$value}rem;
 }
 .pt-#{$value}{
-    padding-top: $value !important;
+    padding-top: #{$value}rem;
 }
 
 .pr-#{$value}{
-    padding-right: $value !important;
+    padding-right: #{$value}rem;
 }
 
 .pb-#{$value}{
-    padding-bottom: $value !important;
+    padding-bottom: #{$value}rem;
 }

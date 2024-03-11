@@ -1,18 +1,27 @@
 .m-#{$value}{
-    margin: $value !important;
+    margin: #{$value}rem;
 }
 
+.mx-#{$value}{
+    margin: 0 #{$value}rem;
+}
+
+.my-#{$value}{
+    margin: #{$value}rem 0;
+}
+
+
 .ml-#{$value}{
-    margin-left: $value !important;
+    margin-left: #{$value}rem;
 }
 .mt-#{$value}{
-    margin-top: $value !important;
+    margin-top: #{$value}rem;
 }
 
 .mr-#{$value}{
-    margin-right: $value !important;
+    margin-right: #{$value}rem;
 }
 
 .mb-#{$value}{
-    margin-bottom: $value !important;
+    margin-bottom: #{$value}rem;
 }
