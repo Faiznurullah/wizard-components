@@ -1,0 +1,6 @@
+@each $key, $value in $flex {
+    .justify-content-#{$key} { 
+     display: flex;
+     justify-content: $value;
+    }
+} 

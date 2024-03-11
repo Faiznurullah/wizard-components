@@ -75,6 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -5673,6 +5681,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .mb-100 {
   margin-bottom: 100rem;
+}
+
+.justify-content-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .alert-blue {

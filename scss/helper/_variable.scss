@@ -134,3 +134,17 @@ $image-border-radius: 0.25rem;
 $image-border-radius-circle: 50%;
 
 // End Image Variabel
+
+
+// Variabel flex 
+
+$flex: (
+    "start" : flex-start,
+    "end" : flex-end,
+    "center" : center,
+    "between" : space-between,
+    "around" : space-around,
+    "evenly" : space-evenly,
+);
+
+// end vaiabel flex
