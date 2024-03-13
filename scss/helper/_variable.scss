@@ -96,19 +96,6 @@ $badge-button-colors: (
 
 
 
-// Container size
-
-$max-size-grid: (
-"s": 540px,
-"m": 720px,
-"l": 960px,
-"xl": 1024px,
-"xxl": 1280px
-)!default;
-
-// End of Size Container
-
-
 // Text Variabel
 
 $lead-font-size: 1.25rem;
@@ -149,3 +136,13 @@ $positions: (
 
 // end vaiabel flex
 
+// variabel col  
+$grid-columns: 12; 
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+); 
+// end variabel col

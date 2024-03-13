@@ -1,0 +1,22 @@
+
+
+// row
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+// Col 
+@each $breakpoint, $width in $breakpoints {
+    @for $i from 1 through $grid-columns {
+      $width-percent: percentage(1 / $grid-columns * $i);
+      @media (min-width: $width) {
+        .col-#{$breakpoint}-#{$i} {
+          flex: 0 0 $width-percent;
+          max-width: $width-percent;
+        }
+      }
+    }
+  }
