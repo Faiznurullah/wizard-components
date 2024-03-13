@@ -1,11 +1,11 @@
 {
   "name": "wizard-component",
   "version": "1.0.0",
-  "description": "simple css components",
+  "description": "A Simple CSS Framework for Easy Website Development",
   "main": "wizard.js",
   "scripts": {
     "test": "start",
-    "start" : "sass --watch scss/wizard.scss:css/wizard.css",
+    "start" : "sass --watch scss/wizard.scss:css/wizard.css --style compressed",
     "build": "sass scss/wizard.scss css/wizard.css --style compressed"
   },
   "keywords": [
