@@ -138,8 +138,9 @@ $positions: (
 
 // variabel col  
 $grid-columns: 12; 
-
+$breakpoint-next: 10px;
 $breakpoints: (
+  "xs": 0px,
   "sm": 576px,
   "md": 768px,
   "lg": 992px,

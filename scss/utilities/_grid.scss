@@ -8,15 +8,21 @@
     margin-right: -15px;
 }
 
-// Col 
+// Col  
 @each $breakpoint, $width in $breakpoints {
-    @for $i from 1 through $grid-columns {
-      $width-percent: percentage(1 / $grid-columns * $i);
+  @for $i from 1 through $grid-columns {
+    $width-percent: percentage(1 / $grid-columns * $i);
+    .col-#{$breakpoint}-#{$i} {
+      flex: 0 0 $width-percent;
+      max-width: $width-percent; 
+        @media (min-width: #{$breakpoint-next}) {
+          flex-basis: 100%;  
+          max-width: 100%;
+        } 
       @media (min-width: $width) {
-        .col-#{$breakpoint}-#{$i} {
-          flex: 0 0 $width-percent;
-          max-width: $width-percent;
-        }
+        flex-basis: $width-percent;
+        max-width: $width-percent;
       }
     }
   }
+}
