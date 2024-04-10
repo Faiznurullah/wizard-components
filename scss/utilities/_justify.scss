@@ -4,3 +4,10 @@
      justify-content: $value;
     }
 } 
+
+@each $key, $value in $positions {
+    .justify-items-#{$key} { 
+     display: flex;
+     justify-content: $value;
+    }
+} 

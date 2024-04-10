@@ -1,0 +1,20 @@
+@each $key, $value in $flex-positions {
+    .flex-#{$key} { 
+     display: flex;
+     flex-wrap: $value;
+    }
+} 
+
+@each $key, $value in $flex-positions {
+    .flex-direction-#{$key} { 
+     display: flex;
+     flex-direction: $value;
+    }
+} 
+
+@each $key, $value in $flex-positions {
+    .flex-wrap-#{$key} { 
+     display: flex;
+     flex-wrap: $value;
+    }
+} 
