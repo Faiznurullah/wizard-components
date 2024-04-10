@@ -132,6 +132,30 @@ $positions: (
     "between" : space-between,
     "around" : space-around,
     "evenly" : space-evenly,
+    "baseline" : baseline,
+    "auto" : auto,
+    "stretch" : stretch,
+    "initial" : initial,
+    "inherit" : inherit,
+    "normal" : normal,
+    "legacy" : legacy 
+);
+
+$flex-positions: (
+    "auto": auto,
+    "wrap": wrap,
+    "nowrap": nowrap,
+    "reverse": wrap-reverse,
+    "initial": initial,
+    "inherit": inherit,
+    "number": number,
+    "row": row,
+    "column": column,
+    "row-reserve": row-reserve,
+    "column-reserve": column-reserve,
+    "flex-grow": flex-grow,
+    "flex-shrink": flex-shrink,
+    "flex-basis": flex-basis,
 );
 
 // end vaiabel flex

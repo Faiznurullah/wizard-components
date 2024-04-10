@@ -3,3 +3,16 @@
      align-items: $value;
     }
 } 
+
+
+@each $key, $value in $positions {
+    .align-content-#{$key} { 
+     align-items: $value;
+    }
+} 
+
+@each $key, $value in $positions {
+    .align-content-#{$key} { 
+     align-items: $value;
+    }
+} 
