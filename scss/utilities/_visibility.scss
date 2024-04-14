@@ -1,0 +1,5 @@
+@each $key, $value in $visibility {
+    .visibility-#{$key} {  
+        visibility: $value;
+    }
+} 
