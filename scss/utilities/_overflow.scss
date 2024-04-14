@@ -1,0 +1,16 @@
+@each $key, $value in $overflow {
+    .overflow-#{$key} {  
+     overflow: $value;
+    }
+    .overflow-y-#{$key} {  
+        overflow-y: $value;
+    }
+    .overflow-x-#{$key} {  
+        overflow-x: $value;
+    } 
+} 
+@each $key, $value in $overflow-wrap {
+    .overflow-wrap-#{$key} {  
+        overflow-wrap: $value;
+       }
+}

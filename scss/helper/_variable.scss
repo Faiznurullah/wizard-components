@@ -171,3 +171,73 @@ $breakpoints: (
   "xl": 1200px
 ); 
 // end variabel col
+
+
+// font 
+$font: (
+    "font-style" : (
+        "normal" : normal,
+        "italic" : italic,
+        "oblique" : oblique
+    ),
+    "font-weight" : (
+        "normal" : normal,
+        "bold" : bold,
+        "bolder" : bolder,
+        "lighter" : lighter,
+        "100" : 100,
+        "200" : 200,
+        "300" : 300,
+        "400" : 400,
+        "500" : 500,
+        "600" : 600,
+        "700" : 700,
+        "800" : 800,
+        "900" : 900,
+    ),
+    "font-variant" : (
+        "normal" : normal,
+        "small-caps" : small-caps
+    ),
+);
+// end font
+
+
+// Overflow
+$overflow : (
+    "auto" : auto,
+    "hidden" : hidden,
+    "scroll" : scroll,
+    "visible" : visible
+);
+$overflow-wrap : (
+    "normal" : normal,
+    "anywhere" : anywhere,
+    "break-word" : break-word, 
+);
+//  end Overflow
+
+// float 
+$float: (
+    "left" : left,
+    "right" : right,
+    "none" : none,
+);
+// end float
+
+// Display
+$display: (
+    "block" : block,
+    "inline" : inline,
+    "inline-block" : inline-block,
+    "flex" : flex,
+    "inline-flex" : inline-flex,
+    "none" : none,
+    "table" : table,
+    "inline-table" : inline-table,
+    "table-row" : table-row,
+    "inline-table-row" : inline-table-row,
+    "table-cell" : table-cell,
+    "inline-table-cell" : inline-table-cell,  
+);
+// End Display
