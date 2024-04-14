@@ -1,0 +1,5 @@
+@each $key, $value in $cursor {
+    .corsur-#{$key} {  
+      cursor: $value;
+    }
+} 

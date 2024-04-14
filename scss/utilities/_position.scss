@@ -1,0 +1,5 @@
+@each $key, $value in $position {
+    .position-#{$key} {  
+        position: $value;
+    }
+} 

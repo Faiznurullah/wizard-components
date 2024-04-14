@@ -1,6 +1,6 @@
 {
   "name": "@faiznurullah/wizard-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Simple CSS Framework for Easy Website Development",
   "main": "wizard.js",
   "scripts": {
