@@ -1,0 +1,7 @@
+@each $key, $values in $float {
+
+    .float-#{$key}{
+        float: $values;
+    }
+
+}

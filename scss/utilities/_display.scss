@@ -1,0 +1,7 @@
+@each $key, $values in $display {
+
+    .d-#{$key}{
+        display: $values;
+    }
+
+}

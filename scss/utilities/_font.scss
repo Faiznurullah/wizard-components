@@ -1,0 +1,17 @@
+
+
+// Font Size
+@for $value from 1 through 100 { 
+.font-size-#{$value}{
+    font-size: #{$value}px;
+} 
+}
+
+// set font
+@each $property, $values in $font {
+    @each $key, $value in $values {
+        .#{$property}-#{$value} {
+            #{$property}: $value;
+        }
+    }
+}
