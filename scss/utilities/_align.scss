@@ -7,12 +7,12 @@
 
 @each $key, $value in $positions {
     .align-content-#{$key} { 
-     align-items: $value;
+     align-content: $value;
     }
 } 
 
 @each $key, $value in $positions {
     .align-content-#{$key} { 
-     align-items: $value;
+     align-content: $value;
     }
 } 

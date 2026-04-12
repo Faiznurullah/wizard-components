@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document List Group</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <title>Wizard Select</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
-
-     <div class="container"> 
-            <div class="col-md-8">
-                <select class="form-select">
-                    <option selected>Pilih opsi...</option>
-                    <option value="1">Opsi 1</option>
-                    <option value="2">Opsi 2</option>
-                    <option value="3">Opsi 3</option>
-                  </select> 
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Form Control</p>
+            <h1 class="text-4xl">Select</h1>
+            <p class="paragraph">An accessible dropdown with crisp borders and strong focus states.</p>
         </div>
-     </div> 
-    
+
+        <section class="card">
+            <div class="card-body">
+                <label class="form-label" for="selectExample">Choose an option</label>
+                <select class="form-select" id="selectExample">
+                    <option selected>Select one option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

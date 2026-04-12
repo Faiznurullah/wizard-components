@@ -1,36 +1,112 @@
+// Container
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Row
+.row {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 
-// row
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+// Base column
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  min-height: 1px;
 }
 
-// Col  
-@each $breakpoint, $width in $breakpoints {
-  @for $i from 1 through $grid-columns {
-    $width-percent: percentage(1 / $grid-columns * $i);
-    .col-#{$breakpoint}-#{$i} {
+// Column sizing
+@for $i from 1 through $grid-columns {
+  $width-percent: percentage(1 / $grid-columns * $i);
+    
+  // Extra small (xs) - default
+  .col-#{$i} {
+    flex: 0 0 $width-percent;
+    max-width: $width-percent;
+  }
+    
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+    
+  // Small devices (sm)
+  @media (min-width: 576px) {
+    .col-sm-#{$i} {
       flex: 0 0 $width-percent;
-      max-width: $width-percent; 
-        @media (min-width: #{$breakpoint-next}) {
-          flex-basis: 100%;  
-          max-width: 100%;
-        } 
-      @media (min-width: $width) {
-        flex-basis: $width-percent;
-        max-width: $width-percent;
-      }
+      max-width: $width-percent;
+    }
+  }
+    
+  // Medium devices (md)
+  @media (min-width: 768px) {
+    .col-md-#{$i} {
+      flex: 0 0 $width-percent;
+      max-width: $width-percent;
+    }
+  }
+    
+  // Large devices (lg)
+  @media (min-width: 992px) {
+    .col-lg-#{$i} {
+      flex: 0 0 $width-percent;
+      max-width: $width-percent;
+    }
+  }
+    
+  // Extra large devices (xl)
+  @media (min-width: 1200px) {
+    .col-xl-#{$i} {
+      flex: 0 0 $width-percent;
+      max-width: $width-percent;
     }
   }
 }
+
+// Responsive clearfix
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+.w-auto { width: auto; }
+.h-auto { height: auto; }

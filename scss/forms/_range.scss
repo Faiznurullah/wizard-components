@@ -1,36 +1,76 @@
-
 .form-range {
-    width: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    height: 4px;
-    border-radius: 0.25rem;
-    background-color: #dee2e6;
-    outline: none;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, $gray-200 0%, $gray-200 var(--value, 0%), $primary var(--value, 0%), $primary 100%);
+  outline: none;
+  margin: 2rem 0;
+  padding: 0;
+  border: none;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+// Chrome/Safari thumb
 .form-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #007bff;
-    cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
-  
-  .form-range::-moz-range-thumb {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #007bff;
-    cursor: pointer;
+    
+  &:active {
+    transform: scale(0.95);
   }
-  
-  .form-range::-ms-thumb {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #007bff;
-    cursor: pointer;
+}
+
+// Firefox thumb
+.form-range::-moz-range-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
+    
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// Firefox track
+.form-range::-moz-range-track {
+  background: transparent;
+  border: none;
+}
+
+// IE/Edge thumb
+.form-range::-ms-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

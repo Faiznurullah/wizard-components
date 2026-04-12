@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Table</title>
-    <link rel="stylesheet" href="../../css/wizard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizard Table</title>
+  <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+  <main class="container py-8">
+    <div class="mb-6">
+      <p class="text-sm text-primary font-semibold uppercase tracking-wide">Data Table</p>
+      <h1 class="text-4xl">Table</h1>
+      <p class="paragraph">Simple structured data presentation with a clean visual rhythm.</p>
+    </div>
 
- <div class="container">
-    <table class="table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nama</th>
-            <th>Usia</th>
-            <th>Alamat</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>25</td>
-            <td>Jakarta</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jane Smith</td>
-            <td>22</td>
-            <td>Bandung</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Michael Johnson</td>
-            <td>28</td>
-            <td>Surabaya</td>
-          </tr>
-        </tbody>
-      </table>
- </div>
-    
+    <section class="card">
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Role</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>Designer</td>
+              <td>Jakarta</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jane Smith</td>
+              <td>Developer</td>
+              <td>Bandung</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Michael Johnson</td>
+              <td>Manager</td>
+              <td>Surabaya</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

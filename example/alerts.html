@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Alerts</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wizard Alerts</title>
+   <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+   <main class="container py-8">
+      <div class="mb-6">
+         <p class="text-sm text-primary font-semibold uppercase tracking-wide">Component Preview</p>
+         <h1 class="text-4xl">Alerts</h1>
+         <p class="paragraph">Supportive feedback blocks with clear hierarchy and calm color surfaces.</p>
+      </div>
 
+      <div class="alert alert-primary">
+         <div class="alert-content">
+            <div class="alert-title">Primary</div>
+            <div class="alert-message">Your dashboard has been updated successfully.</div>
+         </div>
+      </div>
 
-    <div class="alert alert-blue auto">
-       this is alert blue
-    </div>
+      <div class="alert alert-success">
+         <div class="alert-content">
+            <div class="alert-title">Success</div>
+            <div class="alert-message">New settings were saved without any issues.</div>
+         </div>
+      </div>
 
-    <div class="alert alert-green">
-        this is alert green
-     </div> 
+      <div class="alert alert-info">
+         <div class="alert-content">
+            <div class="alert-title">Info</div>
+            <div class="alert-message">You can combine this framework with utility classes for faster layouts.</div>
+         </div>
+      </div>
 
-     <div class="alert alert-red">
-        this is alert red
-     </div>
+      <div class="alert alert-warning">
+         <div class="alert-content">
+            <div class="alert-title">Warning</div>
+            <div class="alert-message">Make sure all component classes are compiled before deploying.</div>
+         </div>
+      </div>
 
-     <div class="alert alert-yellow">
-        this is alert yellow
-     </div>
-
-     <div class="alert alert-grey">
-        this is alert grey
-     </div>
-    
+      <div class="alert alert-danger">
+         <div class="alert-content">
+            <div class="alert-title">Danger</div>
+            <div class="alert-message">There was a problem saving your last change.</div>
+         </div>
+      </div>
+   </main>
 </body>
 </html>

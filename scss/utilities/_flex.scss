@@ -1,20 +1,52 @@
 @each $key, $value in $flex-positions {
-    .flex-#{$key} { 
-     display: flex;
-     flex-wrap: $value;
+    .flex-#{$key} {
+        display: flex;
+        flex-wrap: $value;
     }
-} 
+}
 
 @each $key, $value in $flex-positions {
-    .flex-direction-#{$key} { 
-     display: flex;
-     flex-direction: $value;
+    .flex-direction-#{$key} {
+        display: flex;
+        flex-direction: $value;
     }
-} 
+}
 
 @each $key, $value in $flex-positions {
-    .flex-wrap-#{$key} { 
-     display: flex;
-     flex-wrap: $value;
+    .flex-wrap-#{$key} {
+        display: flex;
+        flex-wrap: $value;
     }
-} 
+}
+
+// Bootstrap-style flex aliases
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+// Gap utilities
+@each $key, $value in $spacing {
+    .gap-#{$key} {
+        gap: $value;
+    }
+}

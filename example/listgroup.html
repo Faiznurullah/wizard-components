@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document List Group</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <title>Wizard List Group</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Component Preview</p>
+            <h1 class="text-4xl">List Group</h1>
+            <p class="paragraph">Structured lists for menus, feeds, and selectable data.</p>
+        </div>
 
-     <div class="container">
-        <ul class="list-group">
-            <li class="list-group-item">Item 1</li>
-            <li class="list-group-item">Item 2</li>
-            <li class="list-group-item">Item 3</li>
-          </ul> 
-     </div>
-     
-    
+        <section class="card">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item active">Dashboard</li>
+                    <li class="list-group-item">Projects</li>
+                    <li class="list-group-item">Messages</li>
+                    <li class="list-group-item disabled">Archived</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

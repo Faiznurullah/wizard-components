@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Images</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <title>Wizard Progress</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Status</p>
+            <h1 class="text-4xl">Progress</h1>
+            <p class="paragraph">Simple progress indicators with smooth gradients and animated fill states.</p>
+        </div>
 
-    <div class="progress">
-        <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-      </div>
-       
-    
+        <section class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="font-semibold">Design System</span>
+                        <span class="text-sm text-gray-500">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar primary" style="width: 60%">60%</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="font-semibold">Release Readiness</span>
+                        <span class="text-sm text-gray-500">85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar success animated" style="width: 85%">85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

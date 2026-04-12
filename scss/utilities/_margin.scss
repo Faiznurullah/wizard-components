@@ -1,31 +1,42 @@
-@for $value from 1 through 100 {
-    .m-#{$value} {
-      margin: #{$value}rem;
-    }
-  
-    .mx-#{$value} {
-      margin: 0 #{$value}rem;
-    }
-  
-    .my-#{$value} {
-      margin: #{$value}rem 0;
-    }
-  
-    .ml-#{$value} {
-      margin-left: #{$value}rem;
+// Margin utilities based on spacing system
+@each $key, $value in $spacing {
+    .m-#{$key} {
+        margin: $value;
     }
     
-  
-    .mt-#{$value} {
-      margin-top: #{$value}rem;
+    .mx-#{$key} {
+        margin-left: $value;
+        margin-right: $value;
     }
-  
-    .mr-#{$value} {
-      margin-right: #{$value}rem;
+    
+    .my-#{$key} {
+        margin-top: $value;
+        margin-bottom: $value;
     }
-  
-    .mb-#{$value} {
-      margin-bottom: #{$value}rem;
+    
+    .mt-#{$key} {
+        margin-top: $value;
     }
-  }
+    
+    .mr-#{$key} {
+        margin-right: $value;
+    }
+    
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+    
+    .ml-#{$key} {
+        margin-left: $value;
+    }
+}
+
+// Auto margins
+.m-auto { margin: auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-auto { margin-top: auto; margin-bottom: auto; }
+.mt-auto { margin-top: auto; }
+.mr-auto { margin-right: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
   

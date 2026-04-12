@@ -1,30 +1,32 @@
-@for $value from 1 through 100 {
-
-.p-#{$value}{
-    padding: #{$value}rem;
-}
-
-.px-#{$value}{
-    padding: 0 #{$value}rem;
-}
-
-.py-#{$value}{
-    padding: #{$value}rem 0;
-}
-
-.pl-#{$value}{
-    padding-left: #{$value}rem;
-}
-.pt-#{$value}{
-    padding-top: #{$value}rem;
-}
-
-.pr-#{$value}{
-    padding-right: #{$value}rem;
-}
-
-.pb-#{$value}{
-    padding-bottom: #{$value}rem;
-}
-
+// Padding utilities based on spacing system
+@each $key, $value in $spacing {
+    .p-#{$key} {
+        padding: $value;
+    }
+    
+    .px-#{$key} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+    
+    .py-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+    
+    .pt-#{$key} {
+        padding-top: $value;
+    }
+    
+    .pr-#{$key} {
+        padding-right: $value;
+    }
+    
+    .pb-#{$key} {
+        padding-bottom: $value;
+    }
+    
+    .pl-#{$key} {
+        padding-left: $value;
+    }
 }
