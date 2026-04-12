@@ -2,69 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document Grids</title>
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Grid</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Layout System</p>
+            <h1 class="text-4xl">Grid</h1>
+            <p class="paragraph">Responsive columns, spacing, and flexible layout combinations.</p>
+        </div>
 
-    <div class="row">
-
-    <div class="col-sm-8">
-        <div class="card">
-            <div class="card-body">
-                <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Column 4</h2>
+                        <p class="card-text">Responsive on medium screens and above.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card success">
+                    <div class="card-body">
+                        <h2 class="card-title">Column 4</h2>
+                        <p class="card-text">Use rows and columns for structured layouts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Column 4</h2>
+                        <p class="card-text">The grid system is inspired by Bootstrap, but simplified.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
-
-    <div class="col-sm-4">
-         <div class="card">
-            <div class="card-body">
-                <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <div class="col-lg-12">
-         <div class="card">
-            <div class="card-body">
-                <div class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-            </div>
-        </div>
-    </div>  
-
-    </div>
-
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="card">
-               <div class="card-body">
-                   <div class="card-text">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   </div>
-               </div>
-           </div>
-       </div> 
-   
-       <div class="col-md-3 col-sm-6">
-            <div class="card">
-               <div class="card-body">
-                   <div class="card-text">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                   </div>
-               </div>
-           </div>
-       </div> 
-    </div>
-
-
-    
+    </main>
 </body>
 </html>

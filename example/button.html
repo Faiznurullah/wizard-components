@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Buttons</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <title>Wizard Buttons</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Component Preview</p>
+            <h1 class="text-4xl">Buttons</h1>
+            <p class="paragraph">Elegant, responsive button styles with solid and outline variants.</p>
+        </div>
 
-    <button class="button button-blue">this is button</button>
-    <button class="button button-dark">this is button</button>
-    <button class="button button-green">this is button</button>
-    <button class="button button-grey">this is button</button>
-    <button class="button button-red">this is button</button>
-    <button class="button button-yellow">this is button</button>
- 
-    
+        <section class="card">
+            <div class="card-body">
+                <h2 class="card-title">Solid buttons</h2>
+                <p class="card-text">Primary actions, hierarchy, and strong color states.</p>
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="button button-primary">Primary</button>
+                    <button class="button button-success">Success</button>
+                    <button class="button button-danger">Danger</button>
+                    <button class="button button-warning">Warning</button>
+                    <button class="button button-info">Info</button>
+                    <button class="button button-dark">Dark</button>
+                    <button class="button button-light">Light</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card mt-6">
+            <div class="card-body">
+                <h2 class="card-title">Outline and sizes</h2>
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="button button-primary outline">Outline</button>
+                    <button class="button button-success outline sm">Small</button>
+                    <button class="button button-danger outline lg">Large</button>
+                    <button class="button button-info block">Block button</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

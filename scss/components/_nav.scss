@@ -1,35 +1,67 @@
 .nav {
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  gap: 0.5rem;
+  align-items: center;
+}
   
   .nav-item {
-    margin-right: 0.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   
   .nav-link {
-    padding: 0.5rem 1rem;
-    color: #5088c4;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1rem;
+    color: $gray-600;
     text-decoration: none;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 2px solid transparent;
+    
+    &:hover {
+      color: $primary;
+      background-color: $gray-100;
+      border-bottom-color: $primary;
+    }
+    
+    &.active {
+      color: $primary;
+      background-color: $primary-light;
+      border-bottom-color: $primary;
+      font-weight: 600;
+    }
   }
   
-
-  .nav-link.disabled {
-    color: #6c757d;
+.nav-link.disabled {
+    color: $gray-400;
     pointer-events: none;
-  }
-   
-  .nav-vertical {
+    opacity: 0.6;
+}
+.nav-vertical {
     flex-direction: column;
-  }
-  
-  .nav-vertical .nav-item {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-  
-  .nav-vertical .nav-link {
+}
+.nav-vertical .nav-item {
     width: 100%;
-  }
+}
+.nav-vertical .nav-link {
+    width: 100%;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+    padding-left: 1.25rem;
+    
+    &:hover {
+        border-left-color: $primary;
+    }
+    
+    &.active {
+        border-left-color: $primary;
+    }
+}

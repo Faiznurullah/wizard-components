@@ -1,19 +1,138 @@
 .card {
-    min-width: 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $white;
+  background-clip: border-box;
+  border: 1px solid $gray-200;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+  &:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: $gray-300;
+    transform: translateY(-4px);
   }
-  .card-body {
-    padding: 20px;
+    
+  &-header {
+    padding: 1.5rem;
+    background-color: transparent;
+    border-bottom: 1px solid $gray-200;
+        
+    &.bg-primary {
+      background-color: $primary;
+      border-bottom: none;
+
+      .card-title {
+        color: $white;
+      }
+    }
+        
+    &.bg-success {
+      background-color: $success;
+      border-bottom: none;
+            
+      .card-title {
+        color: $white;
+      }
+    }
   }
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    
+  &-body {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+        
+    > :last-child {
+      margin-bottom: 0;
+    }
   }
-  .card-text {
-    font-size: 16px;
-    color: #666;
+    
+  &-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: $gray-900;
+    letter-spacing: -0.5px;
   }
+    
+  &-subtitle {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: $gray-600;
+    margin-bottom: 1rem;
+  }
+    
+  &-text {
+    font-size: 1rem;
+    color: $gray-600;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+        
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+    
+  &-footer {
+    padding: 1rem 1.5rem;
+    background-color: $gray-50;
+    border-top: 1px solid $gray-200;
+    border-radius: 0 0 0.75rem 0.75rem;
+  }
+    
+  &-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem 0.75rem 0 0;
+    display: block;
+        
+    &.top {
+      border-radius: 0.75rem 0.75rem 0 0;
+    }
+        
+    &.bottom {
+      border-radius: 0 0 0.75rem 0.75rem;
+    }
+  }
+    
+  // Color variants
+  &.primary {
+    border-color: $primary-light;
+        
+    .card-header {
+      background-color: $primary-light;
+      border-color: $primary;
+    }
+  }
+    
+  &.success {
+    border-color: $success-light;
+        
+    .card-header {
+      background-color: $success-light;
+      border-color: $success;
+    }
+  }
+    
+  &.danger {
+    border-color: $danger-light;
+        
+    .card-header {
+      background-color: $danger-light;
+      border-color: $danger;
+    }
+  }
+    
+  &.warning {
+    border-color: $warning-light;
+        
+    .card-header {
+      background-color: $warning-light;
+      border-color: $warning;
+    }
+  }
+}

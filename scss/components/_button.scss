@@ -1,7 +1,59 @@
-.button { 
-    @each $key, $value in $badge-button-colors { 
-        &-#{$key} {
-            @include button-styles(map-get($value, "background-color"), map-get($value, "color"), map-get($value, "outline-color"))
-          }  
-    } 
+// Base button styles
+.button {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  text-decoration: none;
+
+  @each $key, $value in $badge-button-colors {
+    &-#{$key} {
+      @include button-styles(
+        map-get($value, "background-color"),
+        map-get($value, "color"),
+        map-get($value, "outline-color"),
+        map-get($value, "border")
+      );
+            
+      &.outline {
+        @include button-outline-styles(
+          map-get($value, "background-color"),
+          map-get($value, "color"),
+          map-get($value, "outline-color")
+        );
+      }
+            
+      // Size variants
+      &.sm {
+        padding: 0.375rem 0.75rem;
+        font-size: 0.875rem;
+      }
+            
+      &.lg {
+        padding: 0.875rem 1.5rem;
+        font-size: 1.125rem;
+      }
+            
+      // Icon button
+      &.icon {
+        padding: 0.5rem;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+                
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+      }
+            
+      // Full width button
+      &.block {
+        width: 100%;
+        display: block;
+      }
+    }
   }
+}

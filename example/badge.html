@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Badges</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wizard Badges</title>
+   <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
+<body class="bg-light">
+   <main class="container py-8">
+      <div class="mb-6">
+         <p class="text-sm text-primary font-semibold uppercase tracking-wide">Component Preview</p>
+         <h1 class="text-4xl">Badges</h1>
+         <p class="paragraph">Compact labels for status, count, and metadata.</p>
+      </div>
 
-    <div class="badge badge-blue">
-        blue badge
-     </div> 
+      <section class="card">
+         <div class="card-body">
+            <h2 class="card-title">Filled badges</h2>
+            <div class="d-flex flex-wrap gap-2">
+               <span class="badge badge-primary">Primary</span>
+               <span class="badge badge-success">Success</span>
+               <span class="badge badge-info">Info</span>
+               <span class="badge badge-warning">Warning</span>
+               <span class="badge badge-danger">Danger</span>
+               <span class="badge badge-dark">Dark</span>
+               <span class="badge badge-grey">Neutral</span>
+            </div>
+         </div>
+      </section>
 
-     <div class="badge badge-green">
-        green badge
-     </div> 
-
-     <div class="badge badge-grey">
-        grey badge
-     </div>
-
-     <div class="badge badge-red">
-        red badge
-     </div>
-
-     <div class="badge badge-yellow">
-        yellow badge
-     </div> 
-    
+      <section class="card mt-6">
+         <div class="card-body">
+            <h2 class="card-title">Outline and pill badges</h2>
+            <div class="d-flex flex-wrap gap-2">
+               <span class="badge outline-primary pill">Outline</span>
+               <span class="badge outline-success pill">Published</span>
+               <span class="badge outline-danger pill">Blocked</span>
+            </div>
+         </div>
+      </section>
+   </main>
 </body>
 </html>

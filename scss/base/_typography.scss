@@ -1,40 +1,141 @@
-@font-face {
-    font-family: 'Manrope';
-    src: url('../../font/manrope/Manrope-Light.ttf') format('truetype');
-    font-weight: 300;  
-    font-style: normal;  
+// Modern system font stack
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !default;
+$font-family-mono: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
+
+html, body {
+    font-family: $font-family-base;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $gray-900;
+    background-color: $white;
 }
 
 .lead {
-    font-size: $lead-font-size;
-    font-weight: $lead-font-weight;
-    line-height: $lead-line-height;
-  }
-
+    font-size: 1.35rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: $gray-700;
+}
 
 .paragraph {
-    font-size: $paragraph-font-size;
-    line-height: $paragraph-line-height;
-    margin-bottom: $paragraph-margin-bottom;
-    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-family: $font-family-base;
+    color: $gray-700;
 }
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
+    color: $gray-900;
+    font-family: $font-family-base;
+    letter-spacing: -0.5px;
 }
 
-@each $key, $value in $text-align{
+h1 { font-size: 2.5rem; font-weight: 800; }
+h2 { font-size: 2rem; font-weight: 800; }
+h3 { font-size: 1.5rem; font-weight: 700; }
+h4 { font-size: 1.25rem; font-weight: 700; }
+h5 { font-size: 1.1rem; font-weight: 600; }
+h6 { font-size: 1rem; font-weight: 600; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $primary-dark;
+        text-decoration: underline;
+    }
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+code, pre {
+    font-family: $font-family-mono;
+    background-color: $gray-100;
+    border-radius: 0.25rem;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.85em;
+    color: $danger;
+}
+
+pre {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+
+    code {
+        background-color: transparent;
+        color: inherit;
+        padding: 0;
+    }
+}
+
+blockquote {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid $primary;
+    color: $gray-700;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid $gray-200;
+    margin: 2rem 0;
+}
+
+@each $key, $value in $text-align {
     .text-#{$key} {
         text-align: $value;
     }
 }
 
-@each $key, $value in $colors{
+@each $key, $value in $colors {
     .text-#{$key} {
         color: $value;
     }
 }
 
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-base { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-5xl { font-size: 3rem; }
 
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }

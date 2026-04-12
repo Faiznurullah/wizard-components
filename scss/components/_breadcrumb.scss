@@ -1,27 +1,56 @@
 .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
-    font-family: "manrope";
-  }
-  
-  .breadcrumb-item {
-    display: inline-block;
-    margin-right: 5px; 
-  }
-  
-  .breadcrumb-item:not(:last-child)::after {
-    content: '/';
-    margin-left: 5px; 
-    color: #333; 
-  }
-  
-  .breadcrumb-item a {
+    margin-bottom: 1rem;
+    background-color: $gray-50;
+    border-radius: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    gap: 0;
+}
+
+.breadcrumb-item {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.95rem;
+    
+    &:not(:last-child) {
+        margin-right: 0;
+        
+        &::after {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 0.75rem;
+            content: '/';
+            color: $gray-400;
+        }
+    }
+}
+
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: $primary;
     text-decoration: none;
-    color: #a2b9d1;  
-  }
-  
-  .breadcrumb-item a:hover {
-    text-decoration: none;  
-  }
+    font-weight: 500;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    
+    &:hover {
+        color: $primary-dark;
+        border-bottom-color: $primary;
+        text-decoration: none;
+    }
+}
+
+.breadcrumb-item.active {
+    color: $gray-600;
+    cursor: default;
+    
+    &:hover {
+        border-bottom: none;
+    }
+}
   

@@ -5,7 +5,7 @@
   "main": "wizard.js",
   "scripts": {
     "test": "start",
-    "start" : "sass --watch scss/wizard.scss:css/wizard.css --style compressed",
+    "start": "sass --watch scss/wizard.scss:css/wizard.css --style compressed",
     "build": "sass scss/wizard.scss css/wizard.css --style compressed"
   },
   "repository": {
@@ -19,5 +19,8 @@
     "web"
   ],
   "author": "Faiz Nurullah",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
 }

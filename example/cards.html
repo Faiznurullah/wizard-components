@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Card</title>
+    <title>Wizard Cards</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
-    
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Component Preview</p>
+            <h1 class="text-4xl">Cards</h1>
+            <p class="paragraph">Surface-based content blocks for summaries, dashboards, and callouts.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+                <article class="card">
+                    <div class="card-header bg-primary">
+                        <h2 class="card-title">Project status</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">A clean card layout with a soft border and stronger elevation on hover.</p>
+                        <p class="card-text">Use the header, body, and footer sections to build clear interfaces.</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-success pill">Active</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-12 col-md-6 mb-4">
+                <article class="card success">
+                    <div class="card-body">
+                        <h2 class="card-title">Reusable layout</h2>
+                        <p class="card-subtitle">Designed for modern content panels.</p>
+                        <p class="card-text">Cards should feel calm, useful, and easy to scan.</p>
+                        <button class="button button-primary">Read more</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

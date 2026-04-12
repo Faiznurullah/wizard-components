@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document List Group</title> 
-    <link rel="stylesheet" href="../../css/wizard.css">
+    <title>Wizard Range</title>
+    <link rel="stylesheet" href="../css/wizard.css">
 </head>
-<body>
-
-     <div class="container"> 
-            <div class="col-md-8">
-                
-                    <input type="range" class="form-range" min="0" max="100" step="1" value="50">
-                 
+<body class="bg-light">
+    <main class="container py-8">
+        <div class="mb-6">
+            <p class="text-sm text-primary font-semibold uppercase tracking-wide">Form Control</p>
+            <h1 class="text-4xl">Range Slider</h1>
+            <p class="paragraph">A polished slider for numeric choices and previews.</p>
         </div>
-     </div> 
-    
+
+        <section class="card">
+            <div class="card-body">
+                <label class="form-label" for="rangeExample">Volume</label>
+                <input type="range" class="form-range" min="0" max="100" step="1" value="65" id="rangeExample">
+            </div>
+        </section>
+    </main>
 </body>
 </html>

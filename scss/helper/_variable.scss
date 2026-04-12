@@ -1,303 +1,406 @@
+// Core color palette
+$primary: #3B82F6 !default;
+$success: #10B981 !default;
+$danger: #EF4444 !default;
+$warning: #F59E0B !default;
+$info: #0EA5E9 !default;
+$dark: #1F2937 !default;
+$light: #F3F4F6 !default;
+$white: #FFFFFF !default;
+$black: #000000 !default;
 
+// Neutral scale
+$gray-50: #F9FAFB !default;
+$gray-100: #F3F4F6 !default;
+$gray-200: #E5E7EB !default;
+$gray-300: #D1D5DB !default;
+$gray-400: #9CA3AF !default;
+$gray-500: #6B7280 !default;
+$gray-600: #4B5563 !default;
+$gray-700: #374151 !default;
+$gray-800: #1F2937 !default;
+$gray-900: #111827 !default;
 
-// variabel colors
-
-$blue:  #0f68ec !default;
-$dark:  #151618 !default;
-$green: #48c248 !default;
-$indigo:#6212e4 !default;
-$orange:#fa770c !default;
-$red:   #dd2c3e !default;
-$white: #fff !default;
-$grey:  #e9e6e6 !default;
-$yellow:#f5e642 !default;
+// Legacy aliases for compatibility
+$blue: $primary !default;
+$green: $success !default;
+$red: $danger !default;
+$orange: $warning !default;
+$indigo: $info !default;
+$yellow: $warning !default;
+$grey: $gray-200 !default;
 
 $colors: (
-"blue":       $blue,
-"green":      $green, 
-"indigo":     $indigo,
-"orange":     $orange, 
-"red":        $red, 
-"yellow":     $yellow, 
-"white":      $white
+  "primary": $primary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "dark": $dark,
+  "light": $light,
+  "white": $white,
+  "black": $black,
+  "gray": $gray-500,
+  "blue": $blue,
+  "green": $green,
+  "red": $red,
+  "orange": $orange,
+  "indigo": $indigo,
+  "yellow": $yellow,
+  "grey": $grey,
 ) !default;
 
-// end of variabel colors
+// Surface tints
+$primary-light: #DBEAFE !default;
+$success-light: #D1FAE5 !default;
+$danger-light: #FEE2E2 !default;
+$warning-light: #FEF3C7 !default;
+$info-light: #CFFAFE !default;
 
+$primary-dark: #1E40AF !default;
+$success-dark: #047857 !default;
+$danger-dark: #B91C1C !default;
+$warning-dark: #D97706 !default;
+$info-dark: #0369A1 !default;
 
-// Alert Colors 
+// Spacing scale
+$spacing: (
+  "0": 0,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 0.75rem,
+  "4": 1rem,
+  "5": 1.25rem,
+  "6": 1.5rem,
+  "8": 2rem,
+  "10": 2.5rem,
+  "12": 3rem,
+  "16": 4rem,
+  "20": 5rem,
+  "24": 6rem,
+) !default;
 
+// Border radius
+$border-radius: (
+  "none": 0,
+  "sm": 0.125rem,
+  "base": 0.25rem,
+  "md": 0.375rem,
+  "lg": 0.5rem,
+  "xl": 1rem,
+  "2xl": 1.5rem,
+  "full": 50%,
+) !default;
+
+// Shadow system
+$shadows: (
+  "none": none,
+  "sm": 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+  "base": (0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px 0 rgba(0, 0, 0, 0.06)),
+  "md": (0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06)),
+  "lg": (0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.05)),
+  "xl": (0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 10px 10px -5px rgba(0, 0, 0, 0.04)),
+  "2xl": (0 25px 50px -12px rgba(0, 0, 0, 0.25)),
+) !default;
+
+// Alert colors
 $alert-colors: (
-"blue": (
-"background-color": #EFF,
-"border": 1px solid #DEE,
-"color": #9AA
-),
-"grey":      (
-"background-color": #EEE,
-"border": 1px solid #DDD,
-"color": #999,
-),
-"green":     (
-"background-color": #EFE,
-"border": 1px solid #DED,
-"color": #9A9,
-), 
-"red":       (
-"background-color": #FEE,
-"border": 1px solid #EDD,
-"color": #A66,
-), 
-"yellow":    (
-"background-color": #FDF7DF,
-"border": 1px solid #FEEC6F,
-"color": #C9971C,
-)
+  "primary": (
+    "background-color": $primary-light,
+    "border": 1px solid #BFDBFE,
+    "color": $primary-dark,
+  ),
+  "success": (
+    "background-color": $success-light,
+    "border": 1px solid #A7F3D0,
+    "color": $success-dark,
+  ),
+  "info": (
+    "background-color": $info-light,
+    "border": 1px solid #A5F3FC,
+    "color": $info-dark,
+  ),
+  "warning": (
+    "background-color": $warning-light,
+    "border": 1px solid #FCD34D,
+    "color": $warning-dark,
+  ),
+  "danger": (
+    "background-color": $danger-light,
+    "border": 1px solid #FECACA,
+    "color": $danger-dark,
+  ),
+  "blue": (
+    "background-color": $primary-light,
+    "border": 1px solid #BFDBFE,
+    "color": $primary-dark,
+  ),
+  "green": (
+    "background-color": $success-light,
+    "border": 1px solid #A7F3D0,
+    "color": $success-dark,
+  ),
+  "red": (
+    "background-color": $danger-light,
+    "border": 1px solid #FECACA,
+    "color": $danger-dark,
+  ),
+  "yellow": (
+    "background-color": $warning-light,
+    "border": 1px solid #FCD34D,
+    "color": $warning-dark,
+  ),
+  "grey": (
+    "background-color": $gray-100,
+    "border": 1px solid $gray-200,
+    "color": $gray-600,
+  ),
 ) !default;
 
-// end Alert Colors
-
-// Badge and Button Colors
-
+// Badge and button colors
 $badge-button-colors: (
-"blue" : (
-    "background-color": $blue,
+  "primary": (
+    "background-color": $primary,
     "color": $white,
-    "outline-color": #007bff40,
-),
-"dark" : (
+    "outline-color": rgba(59, 130, 246, 0.2),
+    "border": $primary,
+  ),
+  "success": (
+    "background-color": $success,
+    "color": $white,
+    "outline-color": rgba(16, 185, 129, 0.2),
+    "border": $success,
+  ),
+  "danger": (
+    "background-color": $danger,
+    "color": $white,
+    "outline-color": rgba(239, 68, 68, 0.2),
+    "border": $danger,
+  ),
+  "warning": (
+    "background-color": $warning,
+    "color": $white,
+    "outline-color": rgba(245, 158, 11, 0.2),
+    "border": $warning,
+  ),
+  "info": (
+    "background-color": $info,
+    "color": $white,
+    "outline-color": rgba(14, 165, 233, 0.2),
+    "border": $info,
+  ),
+  "dark": (
     "background-color": $dark,
     "color": $white,
-    "outline-color": #3c3d3d40,
-),
-"green" : (
-    "background-color": $green,
+    "outline-color": rgba(31, 41, 55, 0.2),
+    "border": $dark,
+  ),
+  "light": (
+    "background-color": $light,
+    "color": $dark,
+    "outline-color": rgba(243, 244, 246, 0.35),
+    "border": $gray-300,
+  ),
+  "blue": (
+    "background-color": $primary,
     "color": $white,
-    "outline-color": #00ff7340,
-),
-"grey" : (
-    "background-color": $grey,
+    "outline-color": rgba(59, 130, 246, 0.2),
+    "border": $primary,
+  ),
+  "green": (
+    "background-color": $success,
     "color": $white,
-    "outline-color": #f0f7f340,
-),
-"red" : (
-    "background-color": $red,
+    "outline-color": rgba(16, 185, 129, 0.2),
+    "border": $success,
+  ),
+  "red": (
+    "background-color": $danger,
     "color": $white,
-    "outline-color": #e2303040,
-),
-"yellow" : (
-    "background-color": $yellow,
+    "outline-color": rgba(239, 68, 68, 0.2),
+    "border": $danger,
+  ),
+  "yellow": (
+    "background-color": $warning,
     "color": $white,
-    "outline-color": #d6e23040,
-)
-) !default; 
+    "outline-color": rgba(245, 158, 11, 0.2),
+    "border": $warning,
+  ),
+  "grey": (
+    "background-color": $gray-200,
+    "color": $gray-900,
+    "outline-color": rgba(209, 213, 219, 0.35),
+    "border": $gray-300,
+  ),
+) !default;
 
-// End Badge and Button Colors
-
-
-
-// Text Variabel
-
-$lead-font-size: 1.25rem;
-$lead-font-weight: 300;
-$lead-line-height: 1.6;
-$paragraph-font-size: 1rem;
-$paragraph-line-height: 1.6;
-$paragraph-margin-bottom: 1.25rem;
+// Text variables
+$lead-font-size: 1.25rem !default;
+$lead-font-weight: 300 !default;
+$lead-line-height: 1.6 !default;
+$paragraph-font-size: 1rem !default;
+$paragraph-line-height: 1.6 !default;
+$paragraph-margin-bottom: 1.25rem !default;
 
 $text-align: (
-    "left" : left,
-    "right" : right,
-    "center" : center,
-    "justify" : justify
-);
+  "left": left,
+  "right": right,
+  "center": center,
+  "justify": justify,
+) !default;
 
-// End of Text Variabel
+// Image variables
+$image-border-radius: 0.25rem !default;
+$image-border-radius-circle: 50% !default;
 
-
-// Image Variabel
-
-$image-border-radius: 0.25rem;
-$image-border-radius-circle: 50%;
-
-// End Image Variabel
-
-
-// Variabel flex 
-
+// Flex utilities
 $positions: (
-    "start" : flex-start,
-    "end" : flex-end,
-    "center" : center,
-    "between" : space-between,
-    "around" : space-around,
-    "evenly" : space-evenly,
-    "baseline" : baseline,
-    "auto" : auto,
-    "stretch" : stretch,
-    "initial" : initial,
-    "inherit" : inherit,
-    "normal" : normal,
-    "legacy" : legacy 
-);
+  "start": flex-start,
+  "end": flex-end,
+  "center": center,
+  "between": space-between,
+  "around": space-around,
+  "evenly": space-evenly,
+  "baseline": baseline,
+  "auto": auto,
+  "stretch": stretch,
+  "initial": initial,
+  "inherit": inherit,
+  "normal": normal,
+  "legacy": legacy,
+) !default;
 
 $flex-positions: (
-    "auto": auto,
-    "wrap": wrap,
-    "nowrap": nowrap,
-    "reverse": wrap-reverse,
-    "initial": initial,
-    "inherit": inherit,
-    "number": number,
-    "row": row,
-    "column": column,
-    "row-reserve": row-reserve,
-    "column-reserve": column-reserve,
-    "flex-grow": flex-grow,
-    "flex-shrink": flex-shrink,
-    "flex-basis": flex-basis,
-);
+  "auto": auto,
+  "wrap": wrap,
+  "nowrap": nowrap,
+  "reverse": wrap-reverse,
+  "initial": initial,
+  "inherit": inherit,
+  "number": number,
+  "row": row,
+  "column": column,
+  "row-reserve": row-reserve,
+  "column-reserve": column-reserve,
+  "flex-grow": flex-grow,
+  "flex-shrink": flex-shrink,
+  "flex-basis": flex-basis,
+) !default;
 
-// end vaiabel flex
-
-// variabel col  
-$grid-columns: 12; 
-$breakpoint-next: 10px;
+// Grid variables
+$grid-columns: 12 !default;
+$breakpoint-next: 10px !default;
 $breakpoints: (
   "xs": 0px,
   "sm": 576px,
   "md": 768px,
   "lg": 992px,
-  "xl": 1200px
-); 
-// end variabel col
+  "xl": 1200px,
+) !default;
 
-
-// font 
+// Font utilities
 $font: (
-    "font-style" : (
-        "normal" : normal,
-        "italic" : italic,
-        "oblique" : oblique
-    ),
-    "font-weight" : (
-        "normal" : normal,
-        "bold" : bold,
-        "bolder" : bolder,
-        "lighter" : lighter,
-        "100" : 100,
-        "200" : 200,
-        "300" : 300,
-        "400" : 400,
-        "500" : 500,
-        "600" : 600,
-        "700" : 700,
-        "800" : 800,
-        "900" : 900,
-    ),
-    "font-variant" : (
-        "normal" : normal,
-        "small-caps" : small-caps
-    ),
-);
-// end font
-
+  "font-style": (
+    "normal": normal,
+    "italic": italic,
+    "oblique": oblique,
+  ),
+  "font-weight": (
+    "normal": normal,
+    "bold": bold,
+    "bolder": bolder,
+    "lighter": lighter,
+    "100": 100,
+    "200": 200,
+    "300": 300,
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+    "800": 800,
+    "900": 900,
+  ),
+  "font-variant": (
+    "normal": normal,
+    "small-caps": small-caps,
+  ),
+) !default;
 
 // Overflow
-$overflow : (
-    "auto" : auto,
-    "hidden" : hidden,
-    "scroll" : scroll,
-    "visible" : visible
-);
-$overflow-wrap : (
-    "normal" : normal,
-    "anywhere" : anywhere,
-    "break-word" : break-word, 
-);
-//  end Overflow
+$overflow: (
+  "auto": auto,
+  "hidden": hidden,
+  "scroll": scroll,
+  "visible": visible,
+) !default;
 
-// float 
+$overflow-wrap: (
+  "normal": normal,
+  "anywhere": anywhere,
+  "break-word": break-word,
+) !default;
+
+// Float
 $float: (
-    "left" : left,
-    "right" : right,
-    "none" : none,
-);
-// end float
+  "left": left,
+  "right": right,
+  "none": none,
+) !default;
 
 // Display
 $display: (
-    "block" : block,
-    "inline" : inline,
-    "inline-block" : inline-block,
-    "flex" : flex,
-    "inline-flex" : inline-flex,
-    "none" : none,
-    "table" : table,
-    "inline-table" : inline-table,
-    "table-row" : table-row,
-    "inline-table-row" : inline-table-row,
-    "table-cell" : table-cell,
-    "inline-table-cell" : inline-table-cell,  
-);
-// End Display
+  "block": block,
+  "inline": inline,
+  "inline-block": inline-block,
+  "flex": flex,
+  "inline-flex": inline-flex,
+  "none": none,
+  "table": table,
+  "inline-table": inline-table,
+  "table-row": table-row,
+  "inline-table-row": table-row,
+  "table-cell": table-cell,
+  "inline-table-cell": table-cell,
+) !default;
 
 // Cursor
 $cursor: (
-    "auto": auto,
-    "default": default,
-    "none": none,
-    "context-menu": context-menu,
-    "help": help,
-    "pointer": pointer,
-    "progress": progress,
-    "wait": wait,
-    "cell": cell,
-    "crosshair": crosshair,
-    "text": text,
-    "vertical-text": vertical-text,
-    "alias": alias,
-    "copy": copy,
-    "move": move,
-    "no-drop": no-drop,
-    "not-allowed": not-allowed,
-    "grab": grab,
-    "grabbing": grabbing,
-    "all-scroll": all-scroll,
-    "col-resize": col-resize,
-    "row-resize": row-resize,
-    "n-resize": n-resize,
-    "e-resize": e-resize,
-    "s-resize": s-resize,
-    "w-resize": w-resize,
-    "ne-resize": ne-resize,
-    "nw-resize": nw-resize,
-    "se-resize": se-resize,
-    "sw-resize": sw-resize,
-    "ew-resize": ew-resize,
-    "ns-resize": ns-resize,
-    "nesw-resize": nesw-resize,
-    "nwse-resize": nwse-resize,
-    "zoom-in": zoom-in,
-    "zoom-out": zoom-out
-);
+  "auto": auto,
+  "default": default,
+  "pointer": pointer,
+  "wait": wait,
+  "text": text,
+  "move": move,
+  "help": help,
+  "not-allowed": not-allowed,
+  "crosshair": crosshair,
+  "grab": grab,
+  "grabbing": grabbing,
+  "n-resize": n-resize,
+  "e-resize": e-resize,
+  "s-resize": s-resize,
+  "w-resize": w-resize,
+  "ne-resize": ne-resize,
+  "nw-resize": nw-resize,
+  "se-resize": se-resize,
+  "sw-resize": sw-resize,
+  "ew-resize": ew-resize,
+  "ns-resize": ns-resize,
+  "nesw-resize": nesw-resize,
+  "nwse-resize": nwse-resize,
+  "zoom-in": zoom-in,
+  "zoom-out": zoom-out,
+) !default;
 
-// end Cursor
+// Position and visibility helpers
+$position: (
+  "static": static,
+  "relative": relative,
+  "absolute": absolute,
+  "fixed": fixed,
+  "sticky": sticky,
+) !default;
 
-// visibility
 $visibility: (
-    "visible": visible,
-    "hidden": hidden,
-    "collapse": collapse
-);
-// end visibility
-
-// position
-$position : (
-    "static" : static,
-    "relative" : relative,
-    "absolute" : absolute,
-    "fixed" : fixed,
-    "sticky" : sticky
-);
-// end position
+  "visible": visible,
+  "hidden": hidden,
+) !default;
