@@ -1,23 +1,39 @@
-name: "Publish package"
+name: Publish Package
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-    publish:
-       runs-on: ubuntu-latest
-       steps:
-          - name : checkout
-            uses: actions/checkout@v2
-          - name: node
-            uses: actions/setup-node@v2
-            with:
-                node-version: 12
-                registry-url: https://registry.npmjs.org
-          - name: publish 
-            run: npm publish --access public 
-            working-directory: ./
-            env:
-             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN || secrets.NPM_AUTH_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+          scope: "@faiznurullah"
+
+      - name: Verify npm token
+        run: |
+          if [ -z "$NODE_AUTH_TOKEN" ]; then
+            echo "NPM token is missing. Set NPM_TOKEN (or NPM_AUTH_TOKEN) in repository secrets."
+            exit 1
+          fi
+
+      - name: Verify npm identity
+        run: npm whoami --registry=https://registry.npmjs.org
+
+      - name: Publish package
+        run: npm publish --access public --provenance

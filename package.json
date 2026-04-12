@@ -1,6 +1,6 @@
 {
   "name": "@faiznurullah/wizard-components",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A Simple CSS Framework for Easy Website Development",
   "main": "wizard.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/faiznurullah/wizard-components.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "css",
